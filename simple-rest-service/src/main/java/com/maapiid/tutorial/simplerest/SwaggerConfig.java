@@ -27,17 +27,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("com.maapiid.tutorial.simplerest"))
                 .paths(PathSelectors.any())
                 .build()
-                .apiInfo(apiInfo())
-                .useDefaultResponseMessages(false)
-                .globalResponseMessage(RequestMethod.GET,
-                        newArrayList(new ResponseMessageBuilder()
-                                        .code(500)
-                                        .message("500 message Error!!!")
-                                        .build(),
-                                new ResponseMessageBuilder()
-                                        .code(403)
-                                        .message("Not Allow!!!! Forbidden!")
-                                        .build()));
+                .apiInfo(apiInfo());
     }
 
     private ApiInfo apiInfo() {

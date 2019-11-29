@@ -11,6 +11,7 @@
 
     <modules>
         <module>simple-rest-service</module>
+        <module>another-simple-service</module>
     </modules>
 
 </project>
